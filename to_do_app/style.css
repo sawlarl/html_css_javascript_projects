@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-btn {
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background: #2980b9;
+}
+
+#task-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.task {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    border-left-color: #2ecc71;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-btn {
+    background: #f1c40f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: #d4ac0d;
+}
+
+/* Toggle Button */
+#theme-toggle {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #1e1e1e;
+}
+
+body.dark .container {
+    background: #2b2b2b;
+    color: white;
+}
+
+body.dark #task-input {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark #add-btn {
+    background: #2980b9;
+}
+
+body.dark .task {
+    background: #3a3a3a;
+    border-left-color: #8e44ad;
+}
+
+body.dark .task.completed {
+    border-left-color: #27ae60;
+    opacity: 0.7;
+}
+
+body.dark .edit-btn {
+    background: #d4ac0d;
+}
+
+body.dark .delete-btn {
+    background: #c0392b;
+}
